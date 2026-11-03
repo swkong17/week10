@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: blue;
+    }
+    p{
+        background-color: yellow;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $('button').click(function(){
+       $('h1').css('color', 'red');
+       $('p').css('background-color', 'green');
+        alert('버튼이 클릭되었습니다!');
+        $('img').attr('src', 'https://placehold.co/200x200'); ///이미지 할당되지 않은 것은 이미지 하당!
+        $('p#t1').text('배테읔의 서명 변경됨');///문자로 바꿔줌
+        $('p#t2').html('<a href="https://www.google.com">Google</a>');///html로 바꿔줌 (사이트)
+        $('p#t1').toggleClass('h1');///클래스 토글
+    });
+});
+</script>
+<body>
+    <h1>jQuery 예제</h1>
+    <p>배테읔</p>
+    <p id="t1">배테읔의 서명</p>
+    <p id="t2">배테읔과 친구들</p>
+    <img><br>
+    <img src="https://placehold.co/100x100"><br>
+    <button>클릭</button>
+
+</body>
+</html>
